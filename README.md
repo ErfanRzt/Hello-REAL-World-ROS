@@ -1,7 +1,7 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Static Badge](https://img.shields.io/badge/edX-DelftX-blue?logo=edx)](https://www.edx.org/learn/robotics/delft-university-of-technology-hello-real-world-with-ros-robot-operating-system/)
-![Static Badge](https://img.shields.io/badge/Ubuntu-20.04-green?logo=ubuntu)
-![Static Badge](https://img.shields.io/badge/ROS-noetic-violet?logo=ros)
+[![Static Badge](https://img.shields.io/badge/Ubuntu-20.04-green?logo=ubuntu)](https://releases.ubuntu.com/focal/)
+[![Static Badge](https://img.shields.io/badge/ROS-noetic-violet?logo=ros)](http://wiki.ros.org/noetic)
 
 
 # Hello (REAL) World with ROS

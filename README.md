@@ -27,11 +27,11 @@ On this section you will find information about the course's outline and content
 - Simple interaction with the course simulation environment.
 
 **Week 2: Build your own robot environment** 
-- Software representation of a Robot using Unified Robot Description Format (URDF)
+- Software representation of a Robot using Unified Robot Description Format (URDF).
 - ROS parameter server and adding real-world object representations to the simulation environment.
 
 **Week 3: Autonomous Navigation** 
-- Map creation with GMapping package
+- Map creation with GMapping package.
 - Autonomously navigate a known map with ROS navigation.
 
 **Week 4: Manipulation** 
@@ -41,7 +41,7 @@ On this section you will find information about the course's outline and content
 - Object detection, pose estimation.
 
 **Week 6: Final Project** 
-- ROS file system, basic concepts of behavior design with state machines
+- ROS file system, basic concepts of behavior design with state machines.
 - Build a production line application with two industrial robot arms and a mobile robot.
 
 </div>

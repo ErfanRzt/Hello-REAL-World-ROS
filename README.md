@@ -1,5 +1,4 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Static Badge](https://img.shields.io/badge/edX-DelftX-blue?logo=edx)](https://www.edx.org/learn/robotics/delft-university-of-technology-hello-real-world-with-ros-robot-operating-system/)
 [![Static Badge](https://img.shields.io/badge/Ubuntu-20.04-green?logo=ubuntu)](https://releases.ubuntu.com/focal/)
 [![Static Badge](https://img.shields.io/badge/ROS-noetic-violet?logo=ros)](http://wiki.ros.org/noetic)
 
@@ -66,3 +65,11 @@ Put simply, the edX Honor Code states that, by enrolling in an edX course or pro
 You’ll find the entire edX honor code [here](https://www.edx.org/learn/robotics/delft-university-of-technology-hello-real-world-with-ros-robot-operating-system).
 
 </div>
+
+<br />
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg

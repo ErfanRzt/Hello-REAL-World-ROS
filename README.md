@@ -61,7 +61,7 @@ Do **NOT** forget to source your workspace! Include the command source `$HOME/hr
 
 In the point above, we use the `$HOME` environment variable to point to a location on your computer. Throughout the course, either `/home/$USER` or `$HOME` might be used. These two environment variables essentially point to the same location, so don't be confused by them!
 
-Never try to mix `catkin_make` commands with `catkin` commands. They are not compatible. In the context of the MOOC, we never use catkin_make.
+Never try to mix `catkin_make` commands with `catkin` commands. They are not compatible. In the context of the MOOC, we never use `catkin_make`.
 
 ## Singularity
 The Course Command Shell (CCS) via Singularity provides a platform where you can execute ROS commands. The folder or files you create from the CCS are also reflected in your Linux installation in the corresponding folder. So, when you want to edit the files while doing assignments, it is not necessary to be in the CCS.

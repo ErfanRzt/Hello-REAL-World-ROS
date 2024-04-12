@@ -54,6 +54,8 @@ On this section you will find information about the course's outline and content
 # Course Conventions
 <div align="justify">
 
+During this course, we will follow a few general conventions about how we name things, what we use to show examples to students, or how we refer to certain folders on your computer. Every convention will be detailed on this section, so please read it through carefully. 
+
 ## General Conventions
 Lines starting with a `$` are shell input. The `$` is part of the prompt, not of the command. It should not be typed into the course command shell or terminal.
 

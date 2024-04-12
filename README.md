@@ -70,7 +70,8 @@ The Singularity image is read-only. You can **NOT** use sudo apt-get to install 
 
 Only use the Singularity version provided in by the MOOC instructors!
 
-> [!CAUTION]
+> `⚠️` **WARNING**
+> 
 > **DO NOT** install singularity using `apt-get` or from any other way source than the one provided as they will not work.
 
 You only have to source the noetic setup files **ONCE**!
@@ -80,6 +81,7 @@ $   source /opt/ros/noetic/setup.bash
 ```
 
 Subsequently, you will only be sourcing your workspace setup files with:
+
 ```bash
 $   source <path_to_your_workspace>/devel/setup.bash
 ```
@@ -87,7 +89,8 @@ $   source <path_to_your_workspace>/devel/setup.bash
 ## ROS Distribution
 All the course material uses the **Noetic** distribution of ROS, which is currently the recommended distribution for ROS.
 
-> [!IMPORTANT]  
+> `🚧` **IMPORTANT**
+> 
 > ROS Noetic only supports Python 3. Please keep this in mind when programming!
 
 </div>

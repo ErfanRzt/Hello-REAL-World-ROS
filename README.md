@@ -15,6 +15,37 @@ Subsequently, this repository represents my work through this course. It is trie
 
 </div>
 
+# Syllabus
+<div align="justify">
+  
+On this section you will find information about the course's outline and content. The course is made up of 7 weeks:
+
+**Week 0: Course setup** 
+- Installation of Ubuntu-Linux, course simulation setup and supporting software.
+
+**Week 1: ROS Essentials** 
+- Introduction to ROS Topics, Services, Actions, and Nodes.
+- Simple interaction with the course simulation environment.
+
+**Week 2: Build your own robot environment** 
+- Software representation of a Robot using Unified Robot Description Format (URDF)
+- ROS parameter server and adding real-world object representations to the simulation environment.
+
+**Week 3: Autonomous Navigation** 
+- Map creation with GMapping package
+- Autonomously navigate a known map with ROS navigation.
+
+**Week 4: Manipulation** 
+- Motion planning, pick and place behaviors using industrial robots with ROS MoveIt!
+
+**Week 5: Robot Vision** 
+- Object detection, pose estimation.
+
+**Week 6: Final Project** 
+- ROS file system, basic concepts of behavior design with state machines
+- Build a production line application with two industrial robot arms and a mobile robot.
+
+</div>
 
 # License
 <div align="justify">

@@ -19,7 +19,7 @@ Subsequently, this repository represents my work through this course. It is trie
 # License
 <div align="justify">
   
-### CC-BY-NC-SA 4.0
+### CC BY-NC-SA 4.0
 
 The materials of this course are Copyright Delft University of Technology and are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA) 4.0 International License.
 

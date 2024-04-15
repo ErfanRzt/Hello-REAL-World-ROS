@@ -43,13 +43,9 @@ As with nodes, there are three ways to inspect topics:
 - Print the current content of a topic in the terminal
 `rostopic echo <topic_name>`
 
-<br/>
-
 ---
-<br/>
-In a real robot application you will often have to deal with a large number of nodes and topics. It is important to know which nodes are talking to each other, and what topics are being used to pass the information (messages) between nodes.
 
-<br/>
+In a real robot application you will often have to deal with a large number of nodes and topics. It is important to know which nodes are talking to each other, and what topics are being used to pass the information (messages) between nodes.
 
 ---
 

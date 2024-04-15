@@ -2,24 +2,17 @@
 [![Static Badge](https://img.shields.io/badge/Ubuntu-20.04-green?logo=ubuntu)](https://releases.ubuntu.com/focal/)
 [![Static Badge](https://img.shields.io/badge/ROS-noetic-violet?logo=ros)](http://wiki.ros.org/noetic)
 
-
-
-# Hello (REAL) World with ROS
 <div align="justify">
 
+# Hello (REAL) World with ROS
 The Robot Operating System (ROS) enables you to quickly build robotic applications through access to a large set of open-source software and tools. Over the years, ROS has become the essential tool for roboticists. A large community surrounds ROS and there has been extensive input from industrial users in the development of these tools.
 
 TU Delft offers the MOOC [**Hello (Real) World with ROS**](https://www.edx.org/learn/robotics/delft-university-of-technology-hello-real-world-with-ros-robot-operating-system) which is available on the edX online learning platform. The course is self-paced, free, and will remain open until October 13, 2024. 
 
 Subsequently, this repository represents my work through this course. It is tried to present worthwhile summaries along with profound practices and additional resources. However, there might be some limitations on providing full answers to the quizes and computer assignments according to the edX Honor Code.
 
-</div>
-
-
 
 # Syllabus
-<div align="justify">
-  
 On this section you will find information about the course's outline and content. The course is made up of 7 weeks:
 
 **Week 0: Course setup** 
@@ -47,13 +40,8 @@ On this section you will find information about the course's outline and content
 - ROS file system, basic concepts of behavior design with state machines.
 - Build a production line application with two industrial robot arms and a mobile robot.
 
-</div>
-
-
 
 # Course Conventions
-<div align="justify">
-
 During this course, we will follow a few general conventions about how we name things, what we use to show examples to students, or how we refer to certain folders on your computer. Every convention will be detailed on this section, so please read it through carefully. 
 
 ## General Conventions
@@ -95,13 +83,8 @@ All the course material uses the **Noetic** distribution of ROS, which is curren
 > 
 > ROS Noetic only supports Python 3. Please keep this in mind when programming!
 
-</div>
-
-
 
 # Setup the ROS Workspace
-<div align="justify">
-
 To set up your own workspace, you must use the following command. This setup only needs to be done once!
 
 ```bash
@@ -114,13 +97,8 @@ After that, you need to use the following command to source your workspace. You 
 $   source $HOME/hrwros_ws/devel/setup.bash
 ```
 
-</div>
-
-
 
 # License
-<div align="justify">
-  
 ### CC BY-NC-SA 4.0
 The materials of this course are Copyright Delft University of Technology and are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA) 4.0 International License.
 
@@ -134,9 +112,9 @@ Put simply, the edX Honor Code states that, by enrolling in an edX course or pro
 
 You’ll find the entire edX honor code [here](https://www.edx.org/learn/robotics/delft-university-of-technology-hello-real-world-with-ros-robot-operating-system).
 
+
+
 </div>
-
-
 
 <br />
 

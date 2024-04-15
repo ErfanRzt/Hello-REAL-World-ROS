@@ -65,4 +65,94 @@ In a real robot application you will often have to deal with a large number of n
 
 ---
 
+<br/>
+<br/>
+
+# Build Your Own ROS Application
+Now we have the knowledge about these ROS nodes and topics. The next step will be building your own nodes and topics.
+
+There are four fundamental types of ROS nodes that can be used to build a ROS application:
+
+
+- Publishers
+- Subscribers
+- Services
+- Actions
+
+First, we will focus on Publisher and Subscriber nodes.
+
+## Publisher
+A ROS node that generates information is called a publisher. A publisher sends information to nodes via topics. With robotics often these publishers are connected with sensors like cameras, encoders, etc.
+
+If you use the `rosnode info` command you can see to which topics a node is connected, and if these are outbound or inbound connections.
+
+``` python
+# Node to publish a string topic.
+
+import rospy
+from std_msgs.msg import String
+
+def simplePublisher():
+    simple_publisher = rospy.Publisher('topic_1', String, queue_size = 10)
+    rospy.init_node('node_1', anonymous = False)
+    rate = rospy.Rate(1)
+    
+    # The string to be published on the topic.
+    topic1_content = "my first ROS topic"
+    
+    while not rospy.is_shutdown():
+    	simple_publisher.publish(topic1_content)
+        rate.sleep()
+        
+if __name__== '__main__':
+    try:
+        simplePublisher()
+    except rospy.ROSInterruptException:
+        pass
+```
+
+## Subscriber
+A ROS node that receives information is called a subscriber. It's subscribed to information in a topic and uses topic <u>**callback functions**</u>  to process the received information. With robotics, subscribers typically monitor system states such as triggering an alert when the robot reaches joint limits.
+
+
+```python 
+# Node to subscribe to a string and print the string on terminal.
+
+import rospy
+from std_msgs.msg import String
+
+# Topic callback function.
+def stringListenerCallback(data):
+    rospy.loginfo(' The contents of topic1: %s', data.data)
+
+def stringListener():
+    rospy.init_node('node_2' , anonymous = False)
+    
+    rospy.Subscriber('topic_1' , String, stringListenerCallback)
+    
+    # spin() simply keeps python from exiting until this node is stopped
+    rospy.spin()
+
+if __name__ == '__main__':
+    stringListener()
+```
+
+---
+
+> ## 🎯 Question 1
+> Is the following statement True or False: A ROS Topic can be published without initializing a ROS Node.
+> 
+> ✅ **Answer**: 
+> <br/>
+> **False**! A ROS Topic can only be published from a ROS Node.
+
+> ## 🎯 Question 2
+> Is the following statement True or False: A subscriber callback function is executed continuously, that is, it is processing all the time.
+> 
+> ✅ **Answer**: 
+> <br/>
+> **False**! It's not always processing, it will only process when new data is published.
+
+---
+
 </div>

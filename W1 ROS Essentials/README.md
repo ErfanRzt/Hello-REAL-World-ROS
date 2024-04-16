@@ -1,6 +1,6 @@
 <div align="justify">
 
-# ROS Essentials
+# 1 ROS Essentials
 Welcome to the very first lesson of this ROS MOOC! Before we dive into ROS, it is helpful to know something about how ROS works internally.
 
 ## Nodes
@@ -49,14 +49,14 @@ In a real robot application you will often have to deal with a large number of n
 
 ---
 
-> ## 🎯 Question 1
+> ## 🎯 Question 1.1.
 > In robotics, we often have to interact with the real-world. One type of device we can use to interact with the environment is a sensor: we can sense a desired quantity from the environment and turn it into data. Are sensors an example of a ROS node, or ROS topic?
 > 
 > ✅ **Answer**: 
 > <br/>
 > An exapmle of a <u>**ROS Node**</u>, because a sensor processes information and then provides data. It does not transport it between nodes.
 
-> ## 🎯 Question 2
+> ## 🎯 Question 1.2.
 > Nodes and topics together form the backbone of any ROS application. It is important to know how they work together! How many nodes can publish to a single topic?
 > 
 > ✅ **Answer**: 
@@ -68,7 +68,9 @@ In a real robot application you will often have to deal with a large number of n
 <br/>
 <br/>
 
-# Build Your Own ROS Application
+
+
+# 2 Build Your Own ROS Application
 Now we have the knowledge about these ROS nodes and topics. The next step will be building your own nodes and topics.
 
 There are four fundamental types of ROS nodes that can be used to build a ROS application:
@@ -137,16 +139,77 @@ if __name__ == '__main__':
     stringListener()
 ```
 
+## Publisher/Subscriber Example Codes
+Now, run the scripts provided above in your terminal. After that, open a new terminal and have fun exploring your ROS nodes and topics! Note that when you run the subscriber node, you'll get to see the topic message in the log.  Use the `rqt_graph` command to see how `/node_1` and `/node_2` are connected through `/topic_1`.
+
+<br />
+
+<div align="center">
+  <img src="./Figures/Fig-2-1-rqt-graph.png" alt="Pub/Sub Template RQT Graph" width="500"/>
+</div>
+
+<br />
+<br />
+
+> `🚨` **IMPORTANT**
+> 
+> REMEMBER to always launch the ROS Master using `roscore` executable. roscore is a collection of nodes and programs that are pre-requisites of a ROS-based system. You must have a roscore running in order for ROS nodes to communicate.
+
+Let's apply the knowledge gained from previous sections to verify if our nodes and topics have been successfully defined.
+
+```bash
+$ rosnode list
+/node_1
+/node_2
+/rosout
+
+$ rostopic list
+/rosout
+/rosout_agg
+/topic_1
+```
+
+You can also peek at the connections and players linked to a topic using rostopic info. Check out that the message type of `/topic_1` is set as a standard message `std_msgs/String`. 
+
+```bash
+$ rostopic info /topic_1
+Type: std_msgs/String
+
+Publishers: 
+ * /node_1 (http://riazati:32985/)
+
+Subscribers: 
+ * /node_2 (http://riazati:37091/)
+```
+
+Lastly, experiment with viewing the messages on the topic by employing `rostopic echo`. You can confirm that the output aligns with the `loginfo` message in the subscriber callback. Feel free to adjust various parameters in the code to observe the impacts, such as altering the `rate` in the publisher node to witness changes in the publishing frequency.
+
+```bash
+$ rostopic echo /topic_1
+data: "Welcome to Hello (Real) World with ROS!!!"
+---
+data: "Welcome to Hello (Real) World with ROS!!!"
+---
+data: "Welcome to Hello (Real) World with ROS!!!"
+---
+data: "Welcome to Hello (Real) World with ROS!!!"
+---
+```
+
+> `💡` **NOTE**
+> 
+> Do not forget the `/` before node and topic names! It is the ROS convetion to follow the namespace hierarchy of your package and node, using slashes `/` to separate the levels.
+
 ---
 
-> ## 🎯 Question 1
+> ## 🎯 Question 2.1.
 > Is the following statement True or False: A ROS Topic can be published without initializing a ROS Node.
 > 
 > ✅ **Answer**: 
 > <br/>
 > **False**! A ROS Topic can only be published from a ROS Node.
 
-> ## 🎯 Question 2
+> ## 🎯 Question 2.2.
 > Is the following statement True or False: A subscriber callback function is executed continuously, that is, it is processing all the time.
 > 
 > ✅ **Answer**: 

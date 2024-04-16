@@ -79,7 +79,7 @@ $   source <path_to_your_workspace>/devel/setup.bash
 ## ROS Distribution
 All the course material uses the **Noetic** distribution of ROS, which is currently the recommended distribution for ROS.
 
-> `🚧` **IMPORTANT**
+> `🚨` **IMPORTANT**
 > 
 > ROS Noetic only supports Python 3. Please keep this in mind when programming!
 

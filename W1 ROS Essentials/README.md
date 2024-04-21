@@ -221,11 +221,11 @@ data: "Welcome to Hello (Real) World with ROS!!!"
 # 3 ROS File System
 ROS workspace (catkin workspace) consists of different subspaces. A workspace is a folder to organize ROS project files. ROS uses catkin, which is a build tool to compile source files into binary files. Your code goes into the `src` workspace folder and catkin manages the other ones. A catkin ROS workspace contains three main spaces:
 
-- **src**: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+- **src**: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                 contains source code, this will be your main work folder.
 - **devel**: &nbsp; 
                 contains setup files for the project ROS environment.
-- **build**: &nbsp;&nbsp; 
+- **build**: &ensp; 
                 contains the compiled binary files.
 
 If you'd like to read some more about these spaces, you can do so [here](http://wiki.ros.org/catkin/workspaces#Catkin_Workspaces). The following is the recommended and typical catkin workspace layout: 

@@ -107,7 +107,7 @@ $   source $HOME/hrwros_ws/devel/setup.bash
 For this you will use all that you have learned to create the behavior for the complete factory simulation.
 
 <div align="center">
-  <img src="./Figures/HRWROS-Capstone.gif" alt="HRWROS Capstone" width="800"/>
+  <img src="./Figures/HRWROS-Capstone.gif" alt="HRWROS Capstone" width="1080"/>
 </div>
 
 </br>
@@ -116,13 +116,13 @@ For this you will use all that you have learned to create the behavior for the c
 I successfully completed the course with a perfect grade in July 2024.
 
 <div align="center">
-  <img src="./Figures/HRWROS-Certificate.png" alt="Erfan Riazati ROS Certificate" width="800"/>
+  <img src="./Figures/HRWROS-Certificate.png" alt="Erfan Riazati ROS Certificate" width="1080"/>
 </div>
 
 </br>
 
 <div align="center">
-  <img src="./Figures/HRWROS-Score.png" alt="Erfan Riazati ROS Scores" width="800"/>
+  <img src="./Figures/HRWROS-Score.png" alt="Erfan Riazati ROS Scores" width="1080"/>
 </div>
 
 </br>

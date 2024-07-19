@@ -35,10 +35,10 @@ On this section you will find information about the course's outline and content
 - Motion planning, pick and place behaviors using industrial robots with ROS MoveIt!
 
 **Week 5: Robot Vision** 
-- Object detection, pose estimation.
+- Object detection, pose estimation, and Transforms in ROS.
 
 **Week 6: Final Project** 
-- ROS file system, basic concepts of behavior design with state machines.
+- ROS file system, basic concepts of behavior design with state machines using FlexBE.
 - Build a production line application with two industrial robot arms and a mobile robot.
 
 </br>
@@ -100,6 +100,30 @@ After that, you need to use the following command to source your workspace. You 
 ```bash
 $   source $HOME/hrwros_ws/devel/setup.bash
 ```
+
+</br>
+
+# Capstone Project
+For this you will use all that you have learned to create the behavior for the complete factory simulation.
+
+<div align="center">
+  <img src="./Figures/HRWROS-Capstone.gif" alt="HRWROS Capstone" width="800"/>
+</div>
+
+</br>
+
+# Certificate
+I successfully completed the course with a perfect grade in July 2024.
+
+<div align="center">
+  <img src="./Figures/HRWROS-Certificate.png" alt="Erfan Riazati ROS Certificate" width="800"/>
+</div>
+
+</br>
+
+<div align="center">
+  <img src="./Figures/HRWROS-Score.png" alt="Erfan Riazati ROS Scores" width="800"/>
+</div>
 
 </br>
 

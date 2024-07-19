@@ -1,0 +1,8 @@
+use robot2
+## Define sequence of instructions to move the robot
+## There should be 5 instructions (one per line)
+go R2Home
+go R2PreGrasp
+go down 0.1
+go R2Place
+go down 0.2

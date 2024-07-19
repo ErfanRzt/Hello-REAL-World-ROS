@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="gui" default="true"/>
+
+  <!-- We use the launcher for the first assigment to launch the world -->
+    <include file="$(find hrwros_week5_assignment)/launch/week5_assignment1.launch">
+     <arg name="gui" value="$(arg gui)" />
+    </include>
+  
+  <!-- Add here the solution to Assignment 2 Part 2 -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="static_tf_object_top" args="0 0 0.3 0 0 0 /plate_top_link /turtlebot_object_top"/>
+      
+
+</launch>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="gui" default="true"/>
+
+  <!-- We use the launcher for the first assigment to launch the world -->
+    <include file="$(find hrwros_week5_assignment)/launch/week5_assignment1.launch">
+     <arg name="gui" value="$(arg gui)" />
+    </include>
+
+  <!-- Add here the solution to Assignment 2 Part 1 -->
+    <node pkg="tf2_tools" type="view_frames.py" name="view_frames_node"/>
+      
+
+</launch>

@@ -11,6 +11,7 @@ TU Delft offers the MOOC [**Hello (Real) World with ROS**](https://www.edx.org/l
 
 Subsequently, this repository represents my work through this course. It is tried to present worthwhile summaries along with profound practices and additional resources. However, there might be some limitations on providing full answers to the quizes and computer assignments according to the edX Honor Code.
 
+</br>
 
 # Syllabus
 On this section you will find information about the course's outline and content. The course is made up of 7 weeks:
@@ -40,6 +41,7 @@ On this section you will find information about the course's outline and content
 - ROS file system, basic concepts of behavior design with state machines.
 - Build a production line application with two industrial robot arms and a mobile robot.
 
+</br>
 
 # Course Conventions
 During this course, we will follow a few general conventions about how we name things, what we use to show examples to students, or how we refer to certain folders on your computer. Every convention will be detailed on this section, so please read it through carefully. 
@@ -76,6 +78,7 @@ Subsequently, you will only be sourcing your workspace setup files with:
 $   source <path_to_your_workspace>/devel/setup.bash
 ```
 
+
 ## ROS Distribution
 All the course material uses the **Noetic** distribution of ROS, which is currently the recommended distribution for ROS.
 
@@ -83,6 +86,7 @@ All the course material uses the **Noetic** distribution of ROS, which is curren
 > 
 > ROS Noetic only supports Python 3. Please keep this in mind when programming!
 
+</br>
 
 # Setup the ROS Workspace
 To set up your own workspace, you must use the following command. This setup only needs to be done once!
@@ -97,6 +101,7 @@ After that, you need to use the following command to source your workspace. You 
 $   source $HOME/hrwros_ws/devel/setup.bash
 ```
 
+</br>
 
 # License
 ### CC BY-NC-SA 4.0

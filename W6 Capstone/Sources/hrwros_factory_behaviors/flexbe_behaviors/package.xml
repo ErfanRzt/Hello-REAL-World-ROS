@@ -1,0 +1,21 @@
+<package>
+  <name>flexbe_behaviors</name>
+  <version>1.0.0</version>
+  <description>
+     flexbe_behaviors references all implemented behaviors.
+  </description>
+  <maintainer email="noreply@hrwros.mooc">HRWROS mooc maintainers</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>rospy</run_depend>
+
+  <!-- Add here all ROS packages that contain behaviors -->
+
+
+  <export>
+    <flexbe_behaviors />
+  </export>
+
+</package>

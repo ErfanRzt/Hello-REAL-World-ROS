@@ -217,6 +217,8 @@ data: "Welcome to Hello (Real) World with ROS!!!"
 
 ---
 
+<br/>
+<br/>
 
 # 3 ROS File System
 ROS workspace (catkin workspace) consists of different subspaces. A workspace is a folder to organize ROS project files. ROS uses catkin, which is a build tool to compile source files into binary files. Your code goes into the `src` workspace folder and catkin manages the other ones. A catkin ROS workspace contains three main spaces:
@@ -349,5 +351,49 @@ If you want more information on the folder structure of a catkin workspace, you 
 > **True!** Having a separate folder inside the src space is only for file organization sanity. It is not mandatory to create a "top-level" folder inside your catkin workspace that contains all your ROS packages. But, it is recommended practice.
 
 ---
+
+<br/>
+<br/>
+
+# 4 Custom Message Types
+Nodes can process and share information through topics. The information they pass through these topics needs to be structured in some way, to make it actually usable. Such a structure is known as a data structure. In ROS, we can abstract these data structures as ROS message types. Common data structures in ROS are for example floats, integers, and strings.
+
+## Topic Type Vs. Message Type
+A topic type is only an abstraction idea! Topic type acquire or inherits the ROS message type that is to be exchanged between nodes.
+
+## Derived Message Types
+In ROS, we can easily combine multiple data structures using derived message types. For example, to represent a position in 3D space we will need 3 floating point values: X, Y and Z. The derived message type will then be a struct of three floating point numbers: `{float x, float y, float z}`.
+
+These (derived) message types are defined in message files. These message files are typically located in `<ros_package_name>/msg`, with the filename `<NewMessageType>.msg`. For example, look in the `$HOME/hrwros_ws/src/hrwros/hrwros_msgs/msg` folder for some examples.
+
+Now, let's make our own message type!
+
+We want to construct a new message type called `SensorInformation`. It should contain:
+
+- A ROS message type for interfacing with distance sensors: `sensor_msgs/Range sensor_data`
+- A string containing the manufacturer name: `string maker_name`
+- An unsigned integer containing the sensor part number: `uint32 part_number`
+
+We would create the following file: `$HOME/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg`.
+
+> `💡` **NOTE**
+> 
+> We can see something really interesting here: We use an already derived message, `sensor_msgs/Range`, and simply add a `string` and an `integer` to it. So we can create new message types using already existing derived message types! This idea of **stacking** is really useful in ROS, since you can easily re-use what already exists. 
+
+---
+
+> ## 🎯 Question 4.1.
+> It is important to note that ROS message types are associated with topics. How many message types can be published to a topic?
+>
+> ✅ **Answer**: 
+> <br/>
+> **Only One!** Topics are strongly associated with only one message type.
+
+---
+
+<br/>
+<br/>
+
+
 
 </div>
